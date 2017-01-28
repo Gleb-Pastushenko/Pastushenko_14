@@ -35,5 +35,7 @@ $(document).ready(function () {
 
         margin : 31,
 
+        autoWidth : true
+
     });
 });

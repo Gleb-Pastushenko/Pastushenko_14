@@ -7,11 +7,23 @@ header {
     }
 
     h1 {
-        margin: 113px 0 9px 0;
+        margin: 20px 0 9px 0;
+
+        @media (min-width: 600px) {
+            margin: 113px 0 9px 0;
+        }
     }
 
     .header-slider {
-        margin-top: 59px;
+        margin-top: 10px;
+
+        @media (min-width: 600px) {
+            margin-top: 59px;
+
+            .owl-dots {
+                margin-top: 103px;
+            }
+        }
 
         .owl-item {
             box-sizing: border-box;
@@ -42,7 +54,7 @@ header {
         .owl-dots {
             display: flex;
             justify-content: center;
-            margin-top: 103px;
+            margin-top: 10px;
         }
 
         .owl-dot {
