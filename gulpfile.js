@@ -6,11 +6,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
-    plumber = require('gulp-plumber');
-
-var SASS_INCLUDE_PATHS = [
-    './node_modules/normalize-scss/sass/'
-];
+    plumber = require('gulp-plumber'),
+postcss = require('gulp-postcss'),
+autoprefixer = require('autoprefixer');
 
 function handleError(err) {
     console.log(err.toString());
@@ -21,7 +19,8 @@ gulp.task('styles', function () {
     return gulp.src('./sass/main.scss')
         .pipe(plumber({ errorHandler: handleError }))
         .pipe(sourcemaps.init())
-        .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
+        .pipe(scss())
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./css'));
 });

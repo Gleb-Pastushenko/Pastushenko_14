@@ -1,0 +1,130 @@
+//backgrounds
+
+.our-features-section {
+    background-color: #e7eff1;
+}
+
+.services-section {
+    background-color: #fffaf3;
+}
+
+.testimonials-section {
+    background-color: #03b6e7;
+}
+
+.our-blog-section {
+    background-color: #e7eff1;
+}
+
+footer {
+    background-color: #262829;
+}
+
+//text-color
+
+header {
+    h1, .header-subscription {
+        color: $h-color-inverted;
+    }
+}
+
+h2, h3, .item-title {
+    color: $h-color;
+}
+
+.description {
+    color: $description-color;
+}
+
+.inverted {
+    h2, h3, .item-title {
+        color: $h-color-inverted;
+    }
+
+    .description {
+        color: $description-color-inverted;
+    }
+}
+
+.our-features-section {
+    .contact-us {
+        background-color: $features-footer-color;
+
+        .description {
+            color: white;
+        }
+    }
+}
+
+.services-section {
+    .item-title a {
+        color: $h-color;
+    }
+}
+
+.our-blog-section {
+    .album {
+
+    }
+
+    .items-wrapper {
+        background-color: white;
+        display: inline-block;
+    }
+
+    .album-item:first-child {
+        border-top: 3px solid $decoration-color-3;
+    }
+
+    .album-item:last-child {
+        border-top: 3px solid $decoration-color-4;
+    }
+}
+
+.quick-contact-section {
+    .item-description a {
+        color: $title-color;
+    }
+
+    .item-title a {
+        color: $title-color;
+    }
+}
+
+footer {
+
+    h3 {
+        color: $footer-title-color;
+    }
+
+    ul a {
+        color: $description-color;
+    }
+
+    .bottom-block {
+        .facebook a {
+            color: $facebook-color;
+        }
+
+        .twitter a {
+            color: $twitter-color;
+        }
+
+        .instagram a {
+            color: $instagram-color;
+        }
+
+        .linkedin a {
+            color: $linkedin-color;
+        }
+
+        .google-plus a {
+            color: $google-plus-color;
+        }
+    }
+
+    input {
+        background-color: $footer-decoration-color;
+        color: $footer-input-color;
+    }
+}

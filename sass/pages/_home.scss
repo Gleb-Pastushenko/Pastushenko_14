@@ -1,0 +1,419 @@
+h2 {
+    text-align: center;
+}
+
+.description {
+    line-height: 28px;
+}
+
+main .main-container {
+    padding-top: 88px;
+
+    @media (max-width: 600px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.about-us-section {
+    .description {
+        margin: 29px auto -0.2em auto;
+        max-width: 679px;
+        text-align: center;
+    }
+
+    .button-wrapper {
+        margin-top: 38px;
+        text-align: center;
+    }
+
+    .main-container {
+        padding-bottom: 84px;
+    }
+}
+
+.our-features-section {
+    .album {
+        display: flex;
+        margin: 53px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+
+        .album-item {
+            padding: 15px 0;
+            box-sizing: border-box;
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 50%;
+            max-width: 457px;
+
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    background: url('../images/features-icon-#{$i}.png') no-repeat;
+                }
+            }
+
+            &:nth-child(2n) {
+                text-align: left;
+                background-position-x: left;
+                background-position-y: 15px;
+                padding-left: 71px;
+            }
+
+            &:nth-child(2n-1) {
+                text-align: right;
+                background-position-x: right;
+                background-position-y: 15px;
+                padding-right: 71px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background: url('../images/big-logo.png') center -20px no-repeat
+        }
+    }
+
+    .contact-us {
+        margin-top: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .description {
+            padding: 28px 36px;
+        }
+
+        .button-wrapper {
+            padding: 20px 25px;
+        }
+
+        .button {
+            padding: 15px 32px;
+            white-space: nowrap;
+        }
+
+        @media (min-width: 720px) {
+            flex-direction: row;
+        }
+    }
+}
+
+.projects-section {
+    .main-container {
+        padding-bottom: 93px;
+    }
+
+    .album {
+        margin-top: 28px;
+
+        .album-item:first-child {
+            max-width: 358px;
+
+            .item-photo {
+                position: relative;
+
+                .button-wrapper {
+                    position: absolute;
+                    padding: 20px 20px;
+                    margin: 0;
+                }
+
+                .button {
+                    padding: 8px 22px;
+                }
+            }
+
+            .photo {
+                font-size: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .item-footer {
+                padding: 38px 30px;
+                background-color: $decoration-color-2;
+            }
+
+            .item-description {
+                color: white;
+                margin-top: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    .button-wrapper {
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .button {
+        padding: 15px 23px;
+    }
+}
+
+.services-section {
+    .main-container {
+        padding-bottom: 93px;
+    }
+
+    .album {
+        margin: 50px -15px 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: 600px) {
+            margin: 50px -30px 0 -30px;
+        }
+
+        @media (min-width: 1170px) {
+            justify-content: space-between;
+        }
+    }
+
+    .album-item {
+        padding: 0 30px;
+        max-width: 390px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        min-width: 320px;
+
+        .icon {
+            height: 45px;
+        }
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) .icon {
+                background: url('../images/service-icon-#{$i}.png') no-repeat left bottom;
+            }
+
+            &:nth-child(#{$i}):hover .icon {
+                background-image: url('../images/service-icon-#{$i}-hover.png');
+            }
+        }
+
+        .item-title {
+            margin-top: 27px;
+        }
+
+        .item-description {
+            margin-top: 12px;
+        }
+    }
+
+    .button-wrapper {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.testimonials-section {
+    .main-container {
+        padding-bottom: 89px;
+        background: url('../images/quote-icon-big.png') left top no-repeat;
+        background-size: 81px 66px;
+
+        @media (min-width: 600px) {
+            background-size: 162px 132px;
+        }
+    }
+
+    text-align: center;
+
+    .item-photo {
+        margin: 29px auto 0 auto;
+    }
+
+    .item-description {
+        max-width: 894px;
+        padding: 33px 0 30px 0;
+        margin: 0 auto;
+        background: url('../images/quote-icon-small.png') right bottom no-repeat;
+
+        @media (min-width: 600px) {
+            padding: 33px 54px 18px 54px;
+        }
+    }
+
+    .item-title::before {
+        display: block;
+        content: "";
+        width: 17px;
+        height: 2px;
+        background: white;
+        margin: 3px auto 31px auto;
+    }
+}
+
+.our-blog-section {
+    .main-container {
+        padding-bottom: 94px;
+    }
+
+    .album {
+        margin-top: 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: 1200px) {
+            justify-content: flex-start;
+        }
+    }
+
+    .item-photo {
+        font-size: 0;
+        display: none;
+
+        @media (min-width: 550px) {
+            display: block;
+        }
+    }
+
+    .album-item {
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        background-color: white;
+
+        .item-title {
+            margin-top: 6px;
+        }
+
+        .description {
+            margin-top: 26px;
+        }
+    }
+
+    .album-item:first-child {
+        max-width: 570px;
+        border-top: 2px solid;
+        z-index: 2;
+
+        .content-wrapper {
+            padding: 20px 20px;
+
+            @media (min-width: 500px) {
+                padding: 43px 40px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            box-shadow: 0 0 70px #d4e2e5;
+        }
+    }
+
+    .album-item:last-child {
+        max-width: 570px;
+        border-top: 2px solid;
+        z-index: 1;
+
+        .content-wrapper {
+            padding: 20px 20px;
+
+            @media (min-width: 500px) {
+                padding: 43px 40px;
+            }
+
+            @media (min-width: 1200px) {
+                padding: 43px 55px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 555px;
+        }
+    }
+
+    .button-wrapper {
+        margin-top: 62px;
+        text-align: center;
+
+        .button {
+            padding: 15px 44px;
+        }
+    }
+}
+
+.quick-contact-section {
+    .main-container {
+        padding-bottom: 84px;
+    }
+
+    .album {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 7px -15px 0 -15px;
+    }
+
+    .album-item {
+        box-sizing: border-box;
+        max-width: 390px;
+        padding: 16px;
+        flex-grow: 1;
+
+        &:hover {
+            .item-border {
+                border-color: $decoration-color-2;
+            }
+        }
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) .item-icon {
+                background-image: url('../images/quick-contact-icon-#{$i}.png');
+            }
+        }
+
+        .item-border {
+            border: 1px solid #e1eaec;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 19px;
+
+            @media (min-width: 365px) {
+                flex-direction: row;
+                padding: 0;
+
+                .item-icon {
+                    padding: 42px 0 0 36px;
+                    width: 133px;
+                    height: 126px;
+                    align-self: flex-start;
+                }
+
+                .content-wrapper {
+                    padding: 42px 31px 42px 0;
+                }
+            }
+        }
+
+        .item-icon {
+            box-sizing: border-box;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            align-self: center;
+            background-origin: content-box;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+
+        .content-wrapper {
+            padding: 20px 0 0 0;
+            white-space: nowrap;
+        }
+
+        .item-description a {
+            min-width: 160px;
+        }
+    }
+}

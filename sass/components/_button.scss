@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    padding: 15px 26px;
+    background-color: $decoration-color-3;
+    border-radius: 22px;
+    font-size: 13px;
+    color: white;
+    font-weight: 400;
+    font-family: $main-font;
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+.inverted .button {
+    background-color: transparent;
+    border: 2px solid $decoration-color-4;
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+button.button {
+    border: none;
+}

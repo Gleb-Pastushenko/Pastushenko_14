@@ -1,8 +1,12 @@
-@import "normalize/import-now";
+@import '../node_modules/normalize.css/normalize.css';
 
 @import 'utils/variables';
+@import 'utils/reset';
 
 @import 'base/typography';
+
+@import 'components/navbar-menu';
+@import 'components/button';
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -12,4 +16,5 @@
 
 @import 'themes/theme';
 
-
+@import 'libs/owl.carousel.min';
+@import 'libs/owl.theme.default.min';
