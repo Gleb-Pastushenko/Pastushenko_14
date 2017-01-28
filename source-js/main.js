@@ -12,21 +12,28 @@ function mainMenuToggle() {
 
 $(document).ready(function () {
     $(".owl-carousel.header-slider").owlCarousel({
+        dots : true,
         responsive : {
-            0: {
+            0 : {
                 items : 1
             },
 
-            600: {
+            646 : {
                 items : 2
             },
 
-            800: {
+            939 : {
+                items : 3
+            },
+
+            1232 : {
                 items : 4
             }
         },
 
-        dots : true
-    });
+        center : true,
 
+        margin : 31,
+
+    });
 });
