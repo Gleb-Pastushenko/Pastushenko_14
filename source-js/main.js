@@ -12,28 +12,33 @@ function mainMenuToggle() {
 
 $(document).ready(function () {
     $(".owl-carousel.header-slider").owlCarousel({
+
+        startPosition : 2,
+
+        dotsEach : 4,
+
+        dotsSpeed : 5,
+
         dots : true,
-        responsive : {
-            0 : {
-                items : 1
-            },
-
-            646 : {
-                items : 2
-            },
-
-            939 : {
-                items : 3
-            },
-
-            1232 : {
-                items : 4
-            }
-        },
 
         center : true,
 
         margin : 31,
+
+        autoWidth : true
+    });
+});
+
+$(document).ready(function () {
+    $(".owl-carousel.about-us-slider").owlCarousel({
+
+        nav : true,
+
+        startPosition : 3,
+
+        center : true,
+
+        margin : 60,
 
         autoWidth : true
 

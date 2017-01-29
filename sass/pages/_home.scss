@@ -30,6 +30,53 @@ main .main-container {
     .main-container {
         padding-bottom: 84px;
     }
+
+    .about-us-slider {
+        position: relative;
+        margin-top: 127px;
+        box-sizing: border-box;
+        padding: 0 67px;
+
+        .owl-prev, .owl-next {
+            position: absolute;
+        }
+
+        .owl-next {
+            width: 31px;
+            height: 31px;
+            right: 0;
+            top: 0;
+            background: url('../images/about-us-right-arrow-active.png') center no-repeat;
+            color: transparent;
+
+            &.disabled {
+                background: url('../images/about-us-right-arrow.png') center no-repeat;
+            }
+        }
+
+        .owl-prev {
+            width: 31px;
+            height: 31px;
+            left: 0;
+            top: 0;
+            background: url('../images/about-us-left-arrow-active.png') center no-repeat;
+            color: transparent;
+
+            &.disabled {
+                background: url('../images/about-us-left-arrow.png') center no-repeat;
+            }
+        }
+
+        .owl-item {
+            img {
+                opacity: 0.35 !important;
+            }
+
+            &:hover img {
+                opacity: 0.8 !important;
+            }
+        }
+    }
 }
 
 .our-features-section {

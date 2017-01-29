@@ -19,10 +19,6 @@ header {
 
         @media (min-width: 600px) {
             margin-top: 59px;
-
-            .owl-dots {
-                margin-top: 103px;
-            }
         }
 
         .owl-item {
@@ -55,6 +51,10 @@ header {
             display: flex;
             justify-content: center;
             margin-top: 10px;
+
+            @media (min-width: 600px) {
+                margin-top: 103px;
+            }
         }
 
         .owl-dot {
