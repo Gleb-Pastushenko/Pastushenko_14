@@ -29,6 +29,7 @@ header {
             display: none;
             flex-direction: column;
             position: absolute;
+            z-index: 2;
             right: -15px;
             top: 93px;
             padding: 10px 0;
