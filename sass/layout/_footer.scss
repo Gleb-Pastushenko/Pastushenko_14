@@ -51,6 +51,10 @@ footer {
                     margin-right: 71px;
                 }
             }
+
+            li:hover a {
+                color: $decoration-color-2;
+            }
         }
 
         .contact-form-block {
@@ -132,6 +136,10 @@ footer {
                 margin-top: 19px;
                 padding: 0 20px;
             }
+        }
+
+        li:hover a {
+            text-decoration: underline;
         }
     }
 }
