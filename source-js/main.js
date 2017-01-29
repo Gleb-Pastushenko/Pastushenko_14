@@ -13,15 +13,11 @@ function mainMenuToggle() {
 $(document).ready(function () {
     $(".owl-carousel.header-slider").owlCarousel({
 
-        startPosition : 2,
-
-        dotsEach : 4,
-
-        dotsSpeed : 5,
-
         dots : true,
 
-        center : true,
+        dotData : true,
+
+        center : false,
 
         margin : 31,
 
